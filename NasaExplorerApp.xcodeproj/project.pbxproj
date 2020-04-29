@@ -14,6 +14,7 @@
 		842FB4472459094D00A11B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842FB4462459094D00A11B3E /* Assets.xcassets */; };
 		842FB44A2459094D00A11B3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842FB4492459094D00A11B3E /* Preview Assets.xcassets */; };
 		842FB44D2459094D00A11B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842FB44B2459094D00A11B3E /* LaunchScreen.storyboard */; };
+		842FB455245909EB00A11B3E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FB454245909EB00A11B3E /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		842FB4492459094D00A11B3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		842FB44C2459094D00A11B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842FB44E2459094D00A11B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842FB454245909EB00A11B3E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				842FB44E2459094D00A11B3E /* Info.plist */,
 				842FB4412459094A00A11B3E /* NasaExplorerApp.xcdatamodeld */,
 				842FB4482459094D00A11B3E /* Preview Content */,
+				842FB454245909EB00A11B3E /* AppView.swift */,
 			);
 			path = NasaExplorerApp;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				842FB4432459094A00A11B3E /* NasaExplorerApp.xcdatamodeld in Sources */,
 				842FB43E2459094A00A11B3E /* AppDelegate.swift in Sources */,
 				842FB4452459094A00A11B3E /* ContentView.swift in Sources */,
+				842FB455245909EB00A11B3E /* AppView.swift in Sources */,
 				842FB4402459094A00A11B3E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
