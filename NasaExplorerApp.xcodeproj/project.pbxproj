@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		842FB44A2459094D00A11B3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842FB4492459094D00A11B3E /* Preview Assets.xcassets */; };
 		842FB44D2459094D00A11B3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842FB44B2459094D00A11B3E /* LaunchScreen.storyboard */; };
 		842FB455245909EB00A11B3E /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842FB454245909EB00A11B3E /* AppView.swift */; };
+		8465D1D5245A5BD600A8D10C /* Detalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D1D4245A5BD600A8D10C /* Detalle.swift */; };
+		8465D1D8245A604D00A8D10C /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8465D1D7245A604D00A8D10C /* URLImage */; };
+		8465D1DC245A6CEA00A8D10C /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8465D1DB245A6CEA00A8D10C /* SDWebImageSwiftUI */; };
+		8465D1DF245A6DB400A8D10C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8465D1DE245A6DB400A8D10C /* SDWebImage */; };
+		8465D1E1245A712D00A8D10C /* ListaFavoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D1E0245A712D00A8D10C /* ListaFavoritos.swift */; };
+		8465D1E4245A734F00A8D10C /* Favoritos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D1E2245A734F00A8D10C /* Favoritos+CoreDataClass.swift */; };
+		8465D1E5245A734F00A8D10C /* Favoritos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8465D1E3245A734F00A8D10C /* Favoritos+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,10 @@
 		842FB44C2459094D00A11B3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		842FB44E2459094D00A11B3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842FB454245909EB00A11B3E /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		8465D1D4245A5BD600A8D10C /* Detalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detalle.swift; sourceTree = "<group>"; };
+		8465D1E0245A712D00A8D10C /* ListaFavoritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaFavoritos.swift; sourceTree = "<group>"; };
+		8465D1E2245A734F00A8D10C /* Favoritos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favoritos+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		8465D1E3245A734F00A8D10C /* Favoritos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Favoritos+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8465D1DF245A6DB400A8D10C /* SDWebImage in Frameworks */,
+				8465D1DC245A6CEA00A8D10C /* SDWebImageSwiftUI in Frameworks */,
+				8465D1D8245A604D00A8D10C /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +74,8 @@
 		842FB43C2459094A00A11B3E /* NasaExplorerApp */ = {
 			isa = PBXGroup;
 			children = (
+				8465D1E2245A734F00A8D10C /* Favoritos+CoreDataClass.swift */,
+				8465D1E3245A734F00A8D10C /* Favoritos+CoreDataProperties.swift */,
 				842FB43D2459094A00A11B3E /* AppDelegate.swift */,
 				842FB43F2459094A00A11B3E /* SceneDelegate.swift */,
 				842FB4442459094A00A11B3E /* ContentView.swift */,
@@ -69,6 +85,8 @@
 				842FB4412459094A00A11B3E /* NasaExplorerApp.xcdatamodeld */,
 				842FB4482459094D00A11B3E /* Preview Content */,
 				842FB454245909EB00A11B3E /* AppView.swift */,
+				8465D1D4245A5BD600A8D10C /* Detalle.swift */,
+				8465D1E0245A712D00A8D10C /* ListaFavoritos.swift */,
 			);
 			path = NasaExplorerApp;
 			sourceTree = "<group>";
@@ -97,6 +115,11 @@
 			dependencies = (
 			);
 			name = NasaExplorerApp;
+			packageProductDependencies = (
+				8465D1D7245A604D00A8D10C /* URLImage */,
+				8465D1DB245A6CEA00A8D10C /* SDWebImageSwiftUI */,
+				8465D1DE245A6DB400A8D10C /* SDWebImage */,
+			);
 			productName = NasaExplorerApp;
 			productReference = 842FB43A2459094A00A11B3E /* NasaExplorerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +148,11 @@
 				Base,
 			);
 			mainGroup = 842FB4312459094A00A11B3E;
+			packageReferences = (
+				8465D1D6245A604D00A8D10C /* XCRemoteSwiftPackageReference "url-image" */,
+				8465D1DA245A6CEA00A8D10C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				8465D1DD245A6DB400A8D10C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 842FB43B2459094A00A11B3E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,8 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				842FB4432459094A00A11B3E /* NasaExplorerApp.xcdatamodeld in Sources */,
+				8465D1E4245A734F00A8D10C /* Favoritos+CoreDataClass.swift in Sources */,
 				842FB43E2459094A00A11B3E /* AppDelegate.swift in Sources */,
+				8465D1E5245A734F00A8D10C /* Favoritos+CoreDataProperties.swift in Sources */,
 				842FB4452459094A00A11B3E /* ContentView.swift in Sources */,
+				8465D1D5245A5BD600A8D10C /* Detalle.swift in Sources */,
+				8465D1E1245A712D00A8D10C /* ListaFavoritos.swift in Sources */,
 				842FB455245909EB00A11B3E /* AppView.swift in Sources */,
 				842FB4402459094A00A11B3E /* SceneDelegate.swift in Sources */,
 			);
@@ -348,6 +380,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8465D1D6245A604D00A8D10C /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.15;
+			};
+		};
+		8465D1DA245A6CEA00A8D10C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.3;
+			};
+		};
+		8465D1DD245A6DB400A8D10C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8465D1D7245A604D00A8D10C /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8465D1D6245A604D00A8D10C /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		8465D1DB245A6CEA00A8D10C /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8465D1DA245A6CEA00A8D10C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		8465D1DE245A6DB400A8D10C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8465D1DD245A6DB400A8D10C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		842FB4412459094A00A11B3E /* NasaExplorerApp.xcdatamodeld */ = {

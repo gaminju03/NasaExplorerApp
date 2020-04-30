@@ -17,10 +17,10 @@ struct AppView: View {
                 Text("Inicio")
             }
             //Tab 2
-            /*OrderView().tabItem{
+            ListaFavoritos().tabItem{
                 Image(systemName: "star.circle")
-                Text("Order")
-            }*/
+                Text("Favoritos")
+            }
         }
         
     }

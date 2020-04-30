@@ -7,6 +7,8 @@
 //
 
 import SwiftUI//
+import SDWebImageSwiftUI
+
 struct NasaImage:Identifiable {
     var id : String
     var description : String
@@ -27,13 +29,21 @@ struct ContentView: View {
                    List {
                   
                       ForEach(ListImage) { item in
+                        NavigationLink (destination: Detalle(nasaImage: item)){
                            VStack(alignment: .leading){
                                Text(item.title)
                                    .font(.headline)
-                               Text(item.image)
+                           WebImage(url:URL(string: item.image)).resizable()
+                                .frame(width: 100, height: 100)
 
+                               
+                              .clipped()
+
+
+                            
+                           
                            }
-
+                      }
                        }
 
                        }.onAppear(perform: loadData)
