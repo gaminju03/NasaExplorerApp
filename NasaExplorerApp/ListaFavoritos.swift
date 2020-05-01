@@ -29,9 +29,14 @@ struct ListaFavoritos: View {
                                 
                             }
                             
+                            }.onDelete { indexSet in
+                                for index in indexSet {
+                                    self.moc.delete(self.favoritos[index])
+                                }
                             }
 
                             }
+                            
                         .navigationBarTitle("Nasa Explorer APP")
                     }
     }
