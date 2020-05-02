@@ -11,9 +11,10 @@ import SDWebImageSwiftUI
 
 struct Detalle: View {
     @Environment(\.managedObjectContext) var moc
-   @State private var favoritosel = Favoritos()
-    @State private var favorito = false
-   @FetchRequest(entity: Favoritos.entity(), sortDescriptors: []) var listafavoritos: FetchedResults<Favoritos>
+    @State private var favoritosel = Favoritos()//se trae los campos de favoritos
+    @State private var favorito = false //variable favorito es falso
+    
+   @FetchRequest(entity: Favoritos.entity(), sortDescriptors: []) var listafavoritos: FetchedResults<Favoritos>//consulta de la favoritos y almacena en lista de favoritos
     
     
     var nasaImage : NasaImage
@@ -26,15 +27,17 @@ struct Detalle: View {
                     WebImage(url:URL(string: nasaImage.image)).resizable()
                             .frame(height: 350)
                     HStack{
+                        //dato de la imagen
                           Text("Center: \(nasaImage.center)")
                         Spacer()
+                        //fecha de la imagen
                         Text("Date: \(nasaImage.date_created)")
                     }.background(Color.black)
                    
                 }.foregroundColor(.white)
                  .background(Color.black)
                 
-                .padding()/// seguir diseño de detalle
+                .padding()
                 
              
 
