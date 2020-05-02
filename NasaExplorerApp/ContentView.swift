@@ -34,20 +34,16 @@ struct ContentView: View {
                                Text(item.title)
                                    .font(.headline)
                            WebImage(url:URL(string: item.image)).resizable()
-                                .frame(width: 100, height: 100)
+                                .frame( height: 150)
 
                                
                               .clipped()
-
-
-                            
-                           
                            }
                       }
                        }
 
                        }.onAppear(perform: loadData)
-                   .navigationBarTitle("Nasa Explorer APP")
+                   .navigationBarTitle("NASA EXPLORER APP")
                }
 
            }
@@ -96,16 +92,6 @@ struct ContentView: View {
                             
                         }
                         
-                        
-                        /* for jsonLoan in jsonLoans {
-                               let loan = Loan()
-                               loan.name = jsonLoan["name"] as! String
-                               loan.amount = jsonLoan["loan_amount"] as! Int
-                               loan.use = jsonLoan["use"] as! String
-                               let location = jsonLoan["location"] as! [String:AnyObject]
-                               loan.country = location["country"] as! String
-                               loans.append(loan)
-                           }*/
                        
                         return
                     

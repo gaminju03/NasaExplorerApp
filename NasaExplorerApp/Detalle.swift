@@ -24,17 +24,17 @@ struct Detalle: View {
                 // Text(nasaImage.title)
                 ZStack (alignment: .bottomTrailing){
                     WebImage(url:URL(string: nasaImage.image)).resizable()
-                            .frame(height: 400)
+                            .frame(height: 350)
                     HStack{
                           Text("Center: \(nasaImage.center)")
                         Spacer()
                         Text("Date: \(nasaImage.date_created)")
-                    }.foregroundColor(.white)
-                     .background(Color.black)
-                    .font(.caption)
-                    .padding()/// seguir diseño de detalle
+                    }.background(Color.black)
                    
-                }
+                }.foregroundColor(.white)
+                 .background(Color.black)
+                
+                .padding()/// seguir diseño de detalle
                 
              
 
@@ -81,7 +81,7 @@ struct Detalle: View {
         let filtered = self.listafavoritos.filter{($0).id == self.nasaImage.id}//filtar la lista
         if filtered.count > 0 {//consulta por el id
           self.favorito = true //cambia el valor a true para cambiarlo a favorito
-            self.favoritosel=filtered.first! //elimina favorito seleccionado de la lista , recupera el primer eliemenoto filtrado 
+            self.favoritosel=filtered.first! //elimina favorito seleccionado de la lista , recupera el primer eliemenoto filtrado
         }
         
         

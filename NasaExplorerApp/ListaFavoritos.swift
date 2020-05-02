@@ -21,7 +21,7 @@ struct ListaFavoritos: View {
                             ForEach(favoritos,id:\.id) { item in
                             HStack{
                                 WebImage(url:URL(string: item.imagen)).resizable()
-                                .frame(height: 400)
+                                    .frame(width:100, height: 100)
                                 VStack{
                                      Text("\(item.titulo)")
                                     Text("Date: \(item.fecha)")
